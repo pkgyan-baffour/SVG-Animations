@@ -8,7 +8,9 @@
   <meta charset="UTF-8">
   <title>Kev-moji</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <!--<script src="Kev-moji.js"></script>-->
+  
+  <!--Adding external JS-->
+  <script src="Kev-moji.js"></script>
 </head>
 <!--https://codemyui.com/back-forward-arrow-animation-using-svg/
     Back Arrow Animation Using SVG-->
@@ -20,22 +22,24 @@
           <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
       </g>
   </svg>
-  <!--style for back arrow-->
- 
-  <!--svg back arrow stops-->
-
-
 </div>
 
 
 <body>
 	<button onclick="goBack()">Back to safety</button>
+	<button onclick="myFunction()">SVG-D3.js - View</button>
 
 <p></p>
 
 <script>
 function goBack() {
     window.history.back();
+}
+//assign() method if you want to load a new document,
+//and the option to navigate back to the original document.
+//DOM Location..
+function myFunction() {
+  location.assign("D3js.html");
 }
 </script>
   <style>

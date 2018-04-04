@@ -661,3 +661,13 @@
 
 .w3-btn {margin-bottom:10px;}
 
+}
+    body,
+            html,
+            .main {
+              height: 100%;
+            }
+
+            section {
+              min-height: 100%;
+            }

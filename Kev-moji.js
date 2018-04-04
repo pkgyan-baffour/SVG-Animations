@@ -32,3 +32,10 @@ $(document).ready(function() {
 function myFunction() {
   location.assign("Kev-moji.html");
 }
+//Now on the new document i used the History back()Method
+//which then loads the previous URL in the history list.
+//similar to using the back button in your browser
+//https://www.w3schools.com/jsref/met_his_back.asp
+function goBack() {
+    window.history.back();
+}
