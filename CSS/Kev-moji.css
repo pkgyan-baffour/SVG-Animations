@@ -639,6 +639,7 @@
       padding-bottom: 50px;
     border-radius: 50%;/*creates a circular radius*/
 }
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake*/
 /*shaking an image with keyframes traansform*/
 .avatar:hover {
   animation: shake 0.5s;
