@@ -13,26 +13,26 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--D3.js is a JavaScript library-->
-   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!--D3.js is a JavaScript library-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
+
 <body>
 
-        <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_reload-->
+  <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_reload-->
 
-        <!--By default, the reload() method reloads the page from the cache, but you can force it to reload the page from the server by setting the forceGet parameter to true: location.reload(true).-->
-        <center>
-        	 <h4>SVG Animations using - D3 | Html | CSS | JavaScript  </h4>
-        	 <hr class="dash" />
-         <!-- <button onclick="myFunction()">Kick Again!</button>
+  <!--By default, the reload() method reloads the page from the cache, but you can force it to reload the page from the server by setting the forceGet parameter to true: location.reload(true).-->
+  <center>
+    <h4>SVG Animations using - D3 | Html | CSS | JavaScript </h4>
+    <hr class="dash" />
+    <!-- <button onclick="myFunction()">Kick Again!</button>
         </center>
         <?xml version="1.0" encoding="utf-8"?>
 
         <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#6FCE7D;}
 	.st1{display:none;fill:#D7DADB;}
@@ -918,41 +918,40 @@
 	<path class="st40" d="M948.3,187.4c-3.4,39.6-19,160.7-116.9,264.6C763.8,523.7,688,554.3,648.3,567.1"/>
 </g>
 </svg>
-
-
-      </div>
-      <script>
-        function myFunction() {
-          location.reload();
-        }
-        //<!--
-        //usind D3 to power the animation-->
-        var svg = d3.select("svg").attr("width", 1268).style("height", 700);
-        var mycircle = svg.append("circle")
-          .attr("cx", 700)
-          .attr("cy", 600)
-          .style("fill", "white")
-          .attr("r", 30)
-        mycircle // wait 2 seconds, then slowly change the circle's properties
-          .transition()
-          .duration(3000)
-          .delay(800)
-          .attr("cx", 300)
-          .attr("cy", 190)
-          .style("fill", "lightgrey")
-          .attr("r", 10);
-        mycircle // click the circle to set it properties at random
-          .on("click", function() {
-            d3.select(this)
-              .transition()
-              .duration(5000)
-              .attr("cx", Math.random() * 700)
-              .attr("cy", Math.random() * 300)
-              .style("fill", d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255))
-              .attr("r", Math.random() * 100);
-          });
-      </script>
     </div>
-    <p>SVG Animations using - D3 | Html | CSS | JavaScript By: Kevin Gyan-Baffour.  </p><button onclick="myFunction()">Kick Again!</button>
+    <script>
+      function myFunction() {
+        location.reload();
+      }
+      //<!--
+      //usind D3 to power the football/circle-->
+      var svg = d3.select("svg").attr("width", 1268).style("height", 700);
+      var mycircle = svg.append("circle")
+        .attr("cx", 700)
+        .attr("cy", 600)
+        .style("fill", "white")
+        .attr("r", 30)
+      mycircle // wait 2 seconds, then slowly change the circle's properties
+        .transition()
+        .duration(3000)
+        .delay(800)
+        .attr("cx", 300)
+        .attr("cy", 190)
+        .style("fill", "lightgrey")
+        .attr("r", 10);
+      mycircle // click the circle to set it properties at random
+        .on("click", function() {
+          d3.select(this)
+            .transition()
+            .duration(5000)
+            .attr("cx", Math.random() * 700)
+            .attr("cy", Math.random() * 300)
+            .style("fill", d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255))
+            .attr("r", Math.random() * 100);
+        });
+    </script>
+    </div>
+    <p>SVG Animations using - D3 | Html | CSS | JavaScript By: Kevin Gyan-Baffour. </p><button onclick="myFunction()">Kick Again!</button>
 </body>
+
 </html>
