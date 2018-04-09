@@ -359,7 +359,7 @@
         color: grey;
         font-family: arial;
         display: table-cell;
-        text-align: justify;
+       /* text-align: justify;*/
         vertical-align: middle;
       }
 
@@ -561,13 +561,6 @@
       .row,
       .row>.column {
         padding: 8px;
-      }
-
-      /* Create four equal columns that floats next to each other */
-
-      .column {
-        float: left;
-        width: 25%;
       }
 
       /* Clear floats after rows */
