@@ -923,11 +923,11 @@
         <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_assign-->
         <!-- assign() method if you want to load a new document, and the option to navigate back to the original document.-->
         <center>
-        	<br>
+          <br>
           <!--Adding SVG as an image-->
           <img width="250px" src="SVG/kevMoji.svg"></img>
           <h4>Hover on the SVG to wiggle then</h4>
-<br>
+          <br>
           <button onclick="myFunction()">Activate!</button>
         </center>
         <script>
@@ -940,7 +940,7 @@
         <div class="container">
           <h2 class="mt">SVG-Creation "Kev-Moji" using tools in Illustrator</h2>
           <center>
-              <hr class="dash"/>
+            <hr class="dash" />
           </center>
 
           <div class="row">
@@ -949,7 +949,7 @@
 
                 <img src="images/new1 copy.jpg" alt="Lights" style="width:50%">
                 <div class="caption">
-                  <p>Using elipse tool in illustrator i created the head and filled it with the appropriate colors..</p>
+                  <p>Using elipse tool in Adobe illustrator, i created a circle, then (Shift+) for the Curvature tool in designing the head and filled it with the appropriate colors..</p>
                 </div>
                 </a>
               </div>
@@ -959,7 +959,7 @@
 
                 <img src="images/new12.jpg" alt="" style="width:50%">
                 <div class="caption">
-                  <p>Then i created two circles forming the eyes to be animated.In the layers panel give the eyes a specific name.</p>
+                  <p>Then i created four circles forming the eyes, which were grouped as one element each to be animated.In the layers panel give the eyes a specific name.</p>
                 </div>
                 </a>
               </div>
@@ -969,7 +969,7 @@
 
                 <img src="images/new3.jpg" alt="Fjords" style="width:50%">
                 <div class="caption">
-                  <p>Using the elipse tool create two circles for the spectacles and set opacity to 60% and mouth.</p>
+                  <p>Using the elipse tool create two circles for the spectacles and rectangles to join them and then set opacity to 60% and used then hit(Shift+) to draw the mouth.</p>
                 </div>
                 </a>
               </div>
@@ -1015,46 +1015,45 @@
         </div>
         <div class="container">
           <h3>Save and optimize your SVG</h3>
-          <hr class="dash"/>
+          <hr class="dash" />
 
-          <p class="lead">I then had to save the file ,i.e (save as) and save the file in SVG format. Another window will pop up with svg specific options to choose from. Select SVG 1.1 for your profile, set Type to SVG and click Embed for Image Location. Click OK... And save the SVG
-            onto your computer, then copy the code within the pop up window for your text editor "Sublime Text" preferably.</p>
+          <p class="lead">I then had to save the file ,i.e (save as) and save the file in SVG format. Another window will pop up with svg specific options to choose from. Select SVG 1.1 for your profile, set Type to SVG and click Embed for Image Location. Click OK...
+            And save the SVG onto your computer, then copy the code within the pop up window for your text editor "Sublime Text" preferably.</p>
 
-<div class="container">
+          <div class="container">
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
-        </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+              </div>
 
-        <hr class="dash" />
+              <hr class="dash" />
 
-       
-        <div class="gallery">
-         
-          <img src="images/Save AS.jpg" alt="" width="" height="">
-        </a>
-          <div class="desc">Select *Save As*<br> A window pops up..</div>
-        </div>
+              <div class="gallery">
 
-        <div class="gallery">
-          <img src="images/Screen Shot 2018-04-09 at 08.24.54.png" alt="Forest" width="" height="">
-        </a>
-          <div class="desc">Under Options select *link*<br>And click on SVG Code</div>
-        </div>
+                <img src="images/Save AS.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">Select *Save As*<br> A window pops up..</div>
+              </div>
 
-        <div class="gallery">
-          
-          <img src="images/Screen Shot 2018-04-09 at 08.31.33.png" alt="" width="" height="">
-        </a>
-          <div class="desc">Now copy the Code generated <br> And paste it in your text editor</div>
+              <div class="gallery">
+                <img src="images/Screen Shot 2018-04-09 at 08.24.54.png" alt="Forest" width="" height="">
+                </a>
+                <div class="desc">Under Options select *link*<br>And click on SVG Code</div>
+              </div>
 
-        </div>
-      </div>
-    </div>
- 
+              <div class="gallery">
+
+                <img src="images/Screen Shot 2018-04-09 at 08.31.33.png" alt="" width="" height="">
+                </a>
+                <div class="desc">Now copy the Code generated <br> And paste it in your text editor</div>
+
+              </div>
+            </div>
+          </div>
+
           <div class="container">
             <h3>Animate SVG using CSS</h3>
-            <hr class="dash"/>
+            <hr class="dash" />
             <p class="lead">This animation uses basic css3 animations and transforms. Properties like translate which moves the animation up, down, left or right on the X and Y axis, rotate and scale.</p>
             <br>
             <p class="lead"><strong>Note: </strong>keep your animation as simple as posible in terms of moving parts as the more animation you have may cause a glitch in performance..</p>
@@ -1062,44 +1061,41 @@
 
             <p class="lead"><strong>The code:</strong> I placed the svg code inside two divs. The first one, circle, is the container that holds everything and the second, KevMoji will contain the svg and determine it's size and placement inside the circle. I've basically
               set up two states for my animation. There is a neutral state and a hover state.
-              <br><br>For the neutral state, I specified transition: all 0.4s; which directs all the transforms applied to that class will take
-              .4 seconds to complete. 
-               The last thing i did
-              was to declare the transform-origin: 60px 60px; which is basically where the "pivot point" will be when the path is rotated. 0px 0px would be the top left corner of your object.</p>
+              <br><br>For the neutral state, I specified transition: all 0.4s; which directs all the transforms applied to that class will take .4 seconds to complete. The last thing i did was to declare the transform-origin: 60px 60px; which is basically
+              where the "pivot point" will be when the path is rotated. 0px 0px would be the top left corner of your object.</p>
           </div>
 
           <!--sublime IMages-->
           <h3>Snippets:</h3>
-          <hr class="dash"/>
+          <hr class="dash" />
           <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
-        </div>
- 
-        <div class="gallery">
-          <img src="images/humanEye.jpg" alt="" width="" height="">
-        </a>
-          <div class="desc">The Animation blink has some keyframes. here, i assigned "blink" to the eyes:</div>
-        </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+              </div>
 
-        <div class="gallery">
-          <img src="images/facehuman.jpg" alt="Forest" width="" height="">
-        </a>
-          <div class="desc">The Animation: blink 8s infinite; commands the eyes path to use the "blink" Animation</div>
-        </div>
+              <div class="gallery">
+                <img src="images/humanEye.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">The Animation blink has some keyframes. here, i assigned "blink" to the eyes:</div>
+              </div>
 
-        <div class="gallery">
-          
-          <img src="images/humaneyesid.jpg" alt="" width="" height="">
-        </a>
-          <div class="desc">Setting an Attribute for the eyes which specifies a unique id for the eyes.</div>
+              <div class="gallery">
+                <img src="images/facehuman.jpg" alt="Forest" width="" height="">
+                </a>
+                <div class="desc">The Animation: blink 8s infinite; commands the eyes path to use the "blink" Animation</div>
+              </div>
 
-        </div>
-      </div>
-    </div>
-    <br>
-          <p class="lead">The eyes are set to repeat the animation forever. 
-          i wanted KevMoji to start blinking once the page is loaded so there was no need to add a hover state .</p>
+              <div class="gallery">
+
+                <img src="images/humaneyesid.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">Setting an Attribute for the eyes which specifies a unique id for the eyes.</div>
+
+              </div>
+            </div>
+          </div>
+          <br>
+          <p class="lead">The eyes are set to repeat the animation forever. i wanted KevMoji to start blinking once the page is loaded so there was no need to add a hover state .</p>
 
           <a href="#section2" target="#section" class="scroll-down" address="true"></a>
 
@@ -1110,70 +1106,97 @@
             <!-- MAIN (Center website) -->
             <div class="main">
 
-             
-<br><br>
+              <br><br>
               <h2>Dirt Bike in the City SVG animation.</h2>
-              <p>For this SVG animation, all objects were created in Illustrator as seen below, However some of the objects had to be grouped expecially those that we <strong>Are not</strong> going to animate.<br> The reason being that, we would have a clean
+              <p class="lead">For this SVG animation, all objects were created in Illustrator as seen below, However some of the objects had to be grouped expecially those that we <strong>Are not</strong> going to animate.The reason being that, we would have a clean
                 and less codes to work with.</p>
-<br><br>
-              <!-- Portfolio Gallery Grid -->
-              <div class="row">
-                <div class="column">
-                  <div class="content">
-                    <img src="images/screen4.jpg" style="width:100%">
-                  </div>
-                </div>
-               
-                <div class="column">
-                  <div class="content">
-                    <img src="images/screen2.jpg" style="width:100%">
+              <br><br>
+<!--first carousel images set-->
 
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="content">
-                    <img src="images/screen1.jpg" style="width:100%">
-
-                  </div>
-
-                </div>
-
+			<p class="lead">Objects that are going to be animated were all given unique id's so i could identify them within the code and Animated them.</p>
+              <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
               </div>
 
-              <h2>Dirt Bike in the City SVG animation.</h2>
-              <p>For this SVG animation, all objects were created in Illustrator as seen below, However some of the objects had to be grouped expecially those that we <strong>Are not</strong> going to animate.<br> The reason being that, we would have a clean
-                and less codes to work with.</p>
-          </section>
+              <div class="gallery">
+                <img src="images/bike.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">The bike images were all drawn in illlustrator and assigned a unique name<br>(Bike)</div>
+              </div>
+
+              <div class="gallery">
+                <img src="images/plane.jpg" alt="Forest" width="" height="">
+                </a>
+                <div class="desc">The Plane image was drawn in illlustrator, i grouped all the paths as one and assigned a unique name <br>(Plane)</div>
+              </div>
+
+              <div class="gallery">
+
+                <img src="images/ROLLERCOASTER.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">A Cartesian coordinate system was created for the animated squares in the rollercoaster, i then placed the origin at the center of the SVG viewport</div>
+
+              </div>
+            </div>
           </div>
-          <br>
+          <!--second carousel images-->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
+              </div>
+
+              <div class="gallery">
+                <img src="images/declaire circle.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">I declared the SVG animation to rotate the rollercoaster and used The <strong>animateTransform</strong> element which animates a transformation attribute on a target element.</div>
+              </div>
+
+              <div class="gallery">
+                <img src="images/bikePlaneCloud.jpg" alt="Forest" width="" height="">
+                </a>
+                <div class="desc">In CSS, the bike, cloud and plane elements, were given specific names for the @keyframes animation: and were all set to different durations. </div>
+              </div>
+
+              <div class="gallery">
+
+                <img src="images/skyOpacity1.jpg" alt="" width="" height="">
+                </a>
+                <div class="desc">I located the sky id in the HTML and in CSS animated it using animate: hideshow and set the duration to 10-second infinite.</div>
+
+              </div>
+            </div>
+          </div>
+ 
           <!--embeding from jsFiddle-->
-          <iframe width="100%" height="500" src="//jsfiddle.net/pkgyanbaffour/19fdqyhn/1/embedded/html,css,result/dark/?menuColor=red" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+              <iframe width="100%" height="500" src="//jsfiddle.net/pkgyanbaffour/19fdqyhn/1/embedded/html,css,result/dark/?menuColor=red" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-          <div class="footer">
+              <div class="footer">
 
-            <!--adding SVG social media icons-->
+                <!--adding SVG social media icons-->
 
-            <h3>Kevin Gyan-Baffour<br>
-              <small>University Of Central Lancashire</small><br><small>(BSc) Web Design & Development.</small></h3>
-            <ul class="social-list">
-              <li>
-                <a href="#" class="social-twitter">
+                <h3>Kevin Gyan-Baffour<br>
+                  <small>University Of Central Lancashire</small><br><small>(BSc) Web Design & Development.</small></h3>
+                <ul class="social-list">
+                  <li>
+                    <a href="#" class="social-twitter">
       <svg viewBox="0 0 100 100" class="shape-twitter">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-twitter"></use>
       </svg>
       <span>Twitter <span>@userhandle</span></span>
     </a>
-              </li>
-              <li>
-                <a href="#" class="social-facebook">
+                  </li>
+                  <li>
+                    <a href="#" class="social-facebook">
       <svg viewBox="0 0 100 100" class="shape-facebook">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-facebook"></use>
       </svg>
       <span>Facebook <span></span></span>
     </a>
-              </li>
-              <li>
-                <a href="#" class="social-googleplus">
+                  </li>
+                  <li>
+                    <a href="#" class="social-googleplus">
       <svg viewBox="0 0 100 100" class="shape-googleplus">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googleplus-1"></use>
       </svg>
@@ -1185,26 +1208,26 @@
       </svg>
       <span>Google+ <span>AccountInfo</span></span>
     </a>
-              </li>
-              <li>
-                <a href="#" class="social-youtube">
+                  </li>
+                  <li>
+                    <a href="#" class="social-youtube">
       <svg viewBox="0 0 100 100" class="shape-youtube">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-youtube"></use>
       </svg>
       <span>YouTube <span>ytusername</span></span>
     </a>
-              </li>
-              <li>
-                <a href="#" class="social-github">
+                  </li>
+                  <li>
+                    <a href="#" class="social-github">
       <svg viewBox="0 0 100 100" class="shape-github">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-github"></use>
       </svg>
       <span>YouTube <span>githandle</span></span>
     </a>
-              </li>
-            </ul>
+                  </li>
+                </ul>
 
-            <svg width="0" height="0">
+                <svg width="0" height="0">
 
   <defs>
 <!--adding SVG social media icons-->
@@ -1265,7 +1288,8 @@
 
 </svg>
 
-            <p>&copy; 2018 Portfolio | Web Design and Development | University of Central Lancashire. All Rights Reserved.</p>
-          </div>
+                <p>&copy; 2018 Portfolio | Web Design and Development | University of Central Lancashire. All Rights Reserved.</p>
+              </div>
 </body>
+
 </html>
