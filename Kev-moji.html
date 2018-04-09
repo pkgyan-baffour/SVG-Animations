@@ -10,25 +10,12 @@
 
   <!--Adding external JS-->
   <script src="Kev-moji.js"></script>
-
 </head>
-<!--https://codemyui.com/back-forward-arrow-animation-using-svg/
-    Back Arrow Animation Using SVG-->
-<div class="wrapper">
-  <svg width="2px" height="3px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="prev" transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
-          <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
-          <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
-          <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
-      </g>
-  </svg>
-</div>
 
 <body>
+  <Br><br>
   <button onclick="goBack()">Back to safety</button>
-  <button onclick="myFunction()">SVG-D3.js - View</button>
-
-  <p></p>
+  <button onclick="myFunction()">D3-SVG Goal kick - View</button>
 
   <script>
     function goBack() {
@@ -41,15 +28,16 @@
       location.assign("D3js.html");
     }
   </script>
-
+  <h1>BobbleHead</h1>
+  <br><br><br>
   <div class="kevins_face">
 
     <!--face--
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <a href="" class="svg">
-      <div class="svg-wrapper">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
+
+    <div class="svg-wrapper">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 <style type="text/css">
   .st0{display:none;}
   .st1{display:none;fill:#050505;}
@@ -2996,161 +2984,201 @@ cuXKlSt8/6rdIvOoYqyp358riS1Xrly57r6fPUqxPep7cyWx5cqVK9ds7nNJYLly5cqVK1euXLly
   <path class="st1" d="M932.8,457.1"/>
   <path class="st42" d="M188.6,408.9"/>
 </g>
-</svg></a>
+</svg>
 
-    <svg width="100%" height="100%" viewBox="0 -50 900 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <svg width="140%" height="140%" viewBox="0 50 900 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
  <path id="path">
     <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
   </path>
   <text font-size="83" font-family: 'Lobster', cursive;
  fill='lightgrey(36, 95%, 85%, 1)'>
-    <textPath xlink:href="#path">SVG Animated Kev-Moji...
+    <textPath xlink:href="#path">SVG Kev-Moji...
     </textPath>
-    
   </text>
 </svg>
     </div>
+    <div style="text-align:center;">
 
-    <!--<div class="text">hover on me</div>-->
-    <style>
-      .svg-wrapper {
-        height: 100px;
-        margin: 0 auto;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-      }
-
-      .text {
-        color: #fff;
-        font-family: 'Roboto Condensed';
-        font-size: 22px;
-        letter-spacing: 8px;
-        line-height: 32px;
-        position: relative;
-        top: -48px;
-      }
-
-      @keyframes draw {
-        0% {
-          stroke-dasharray: 140 540;
-          stroke-dashoffset: -474;
-          stroke-width: 8px;
+      <!--<div class="text">hover on me</div>-->
+      <style>
+        .svg-wrapper {
+          height: 100px;
+          margin: 0 auto;
+          position: absolute;
+          top: 20%;
+          transform: translateY(-50%);
+          width: 100%;
         }
-        100% {
-          stroke-dasharray: 760;
-          stroke-dashoffset: 0;
-          stroke-width: 2px;
-        }
-      }
 
-      .svg-wrapper:hover .kevins_face {
-        -webkit-animation: 0.5s draw linear forwards;
-        animation: 0.5s draw linear forwards;
-      }
+        .text {
+          color: #fff;
+          font-family: 'Roboto Condensed';
+          font-size: 22px;
+          letter-spacing: 8px;
+          line-height: 32px;
+          position: relative;
+          top: -48px;
+        }
 
-      html,
-      body {
-        background: tomato;
-        height: 100%;
-        overflow: hidden;
-        text-align: center;
-      }
+        @keyframes draw {
+          0% {
+            stroke-dasharray: 140 540;
+            stroke-dashoffset: -474;
+            stroke-width: 8px;
+          }
+          100% {
+            stroke-dasharray: 760;
+            stroke-dashoffset: 0;
+            stroke-width: 2px;
+          }
+        }
 
-      /*blinker*/
+        .svg-wrapper:hover .kevins_face {
+          -webkit-animation: 0.5s draw linear forwards;
+          animation: 0.5s draw linear forwards;
+        }
 
-      .humaneyes {
-        -webkit-animation-name: blink;
-        -webkit-animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-transform-origin: 20%;
+        html,
+        body {
+          background: tomato;
+          height: 100%;
+          overflow: hidden;
+          text-align: center;
+        }
 
-        animation-name: blink;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        transform-origin: 50%;
-      }
+        /*blinker*/
 
-      @-webkit-keyframes blink {
-        0% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        1% {
-          -webkit-transform: scaleX(1.3) scaleY(0.1);
-        }
-        2% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        60% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        61% {
-          -webkit-transform: scaleX(1.3) scaleY(0.1);
-        }
-        62% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        100% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-      }
+        .humaneyes {
+          -webkit-animation-name: blink;
+          -webkit-animation-duration: 3s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-transform-origin: 20%;
 
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count*/
-      .circle.kevins_face.humaneyes {
-        -webkit-animation: blink 8s infinite;
-        /* specifies what animation keyframes to 
+          animation-name: blink;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          transform-origin: 50%;
+        }
+
+        @-webkit-keyframes blink {
+          0% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          1% {
+            -webkit-transform: scaleX(1.3) scaleY(0.1);
+          }
+          2% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          60% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          61% {
+            -webkit-transform: scaleX(1.3) scaleY(0.1);
+          }
+          62% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          100% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+        }
+
+        /*https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count*/
+
+        .circle.kevins_face.humaneyes {
+          -webkit-animation: blink 8s infinite;
+          /* specifies what animation keyframes to 
         use (listed below), how many seconds the animation 
         will run and how many times it will be repeated */
-        -moz-animation: blink 8s infinite;
-        -ms-animation: blink 8s infinite;
-        -o-animation: blink 8s infinite;
-        animation: blink 8s infinite;
-        -webkit-transform-origin: 75px 75px;
-        -moz-transform-origin: 75px 75px;
-        -ms-transform-origin: 75px 75px;
-        -o-transform-origin: 75px 75px;
-        transform-origin: 75px 75px;
-      }
+          -moz-animation: blink 8s infinite;
+          -ms-animation: blink 8s infinite;
+          -o-animation: blink 8s infinite;
+          animation: blink 8s infinite;
+          -webkit-transform-origin: 75px 75px;
+          -moz-transform-origin: 75px 75px;
+          -ms-transform-origin: 75px 75px;
+          -o-transform-origin: 75px 75px;
+          transform-origin: 75px 75px;
+        }
 
-      /* TRANSITIONS & TRANSFORMS */
+        /* TRANSITIONS & TRANSFORMS */
 
-      /* BLINK ANIMATION */
+        /* BLINK ANIMATION */
 
-      @-webkit-keyframes blink {
-        0% {
-          -webkit-transform: scaleX(1) scaleY(1);
+        @-webkit-keyframes blink {
+          0% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          1% {
+            -webkit-transform: scaleX(1.3) scaleY(0.1);
+          }
+          2% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          60% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          61% {
+            -webkit-transform: scaleX(1.3) scaleY(0.1);
+          }
+          62% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
+          100% {
+            -webkit-transform: scaleX(1) scaleY(1);
+          }
         }
-        1% {
-          -webkit-transform: scaleX(1.3) scaleY(0.1);
-        }
-        2% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        60% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        61% {
-          -webkit-transform: scaleX(1.3) scaleY(0.1);
-        }
-        62% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-        100% {
-          -webkit-transform: scaleX(1) scaleY(1);
-        }
-      }
 
-      .kevins_face {
-        width: 400px;
-        /* sets the size of kevins head */
-        height: 400px;
-        margin: auto;
-        /* centers kevins head */
-        position: relative;
-        /* positions kevins head within .circle */
-        top: 50px;
-      }
-    </style>
+        .kevins_face {
+          width: 400px;
+          /* sets the size of kevins head */
+          height: 400px;
+          margin: auto;
+          /* centers kevins head */
+          position: relative;
+
+        }
+
+        /*https://css-tricks.com/lodge/svg/*/
+
+        /*rocking Kev-Moji*/
+
+        .kevins_face {
+
+          transform-origin: center center;
+          -webkit-animation: move 0.10s ease infinite alternate;
+          -moz-animation: move 0.10s ease infinite alternate;
+          animation: move 0.5s ease infinite alternate;
+        }
+
+        @-webkit-keyframes move {
+          0% {
+            transform: rotate(20deg);
+          }
+          100% {
+            transform: rotate(-10deg);
+          }
+        }
+
+        @-moz-keyframes move {
+          0% {
+            transform: rotate(-10deg);
+          }
+          100% {
+            transform: rotate(10deg);
+          }
+        }
+
+        @keyframes move {
+          0% {
+            transform: rotate(-10deg);
+          }
+          100% {
+            transform: rotate(10deg);
+          }
+        }
+      </style>
 </body>
+
 </html>
