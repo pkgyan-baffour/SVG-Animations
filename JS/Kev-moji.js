@@ -32,3 +32,4 @@ $(document).ready(function() {
 function myFunction() {
   location.assign("Kev-moji.html");
 }
+

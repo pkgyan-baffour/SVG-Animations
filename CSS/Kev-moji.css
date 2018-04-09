@@ -99,7 +99,6 @@
 
  /*End*/
 
-
  *,
         *::after,
         *::before {
@@ -240,7 +239,8 @@
       background-color: #f1f1f1;
     }
 
-    /*blinker*/
+    /*blinker--Specifying the name of the 
+    keyframe you want to bind to the selector*/
 
     .eye {
       -webkit-animation-name: blink;
@@ -252,30 +252,6 @@
       animation-duration: 3s;
       animation-iteration-count: infinite;
       transform-origin: 50%;
-    }
-
-    @-webkit-keyframes blink {
-      0% {
-        -webkit-transform: scaleX(1) scaleY(1);
-      }
-      1% {
-        -webkit-transform: scaleX(1.3) scaleY(0.1);
-      }
-      2% {
-        -webkit-transform: scaleX(1) scaleY(1);
-      }
-      60% {
-        -webkit-transform: scaleX(1) scaleY(1);
-      }
-      61% {
-        -webkit-transform: scaleX(1.3) scaleY(0.1);
-      }
-      62% {
-        -webkit-transform: scaleX(1) scaleY(1);
-      }
-      100% {
-        -webkit-transform: scaleX(1) scaleY(1);
-      }
     }
 
     @keyframes blink {
@@ -359,7 +335,6 @@
 
     .footer {
       background-color:#d3d3d3;
-
       margin-top: 10px;
       padding: 10px;
 
@@ -534,10 +509,10 @@
         }
       }
 
-      hr {
+      /*hr {
         color: black;
         background-color: black;
-      }
+      }*/
 
       h3 {
 
@@ -716,4 +691,84 @@ img:hover {
    80% { opacity:1; transform: translateX(-9vw); }  
   100% { opacity:0; transform: translateX(-15vw); } 
 }
+ .dash {
+        border: 0 none;
+        border-top: 1px dashed lightgrey;
+
+        height: 0;
+      }
+       .lead {
+      text-align: justify;
+    }
+
+    * {
+    box-sizing: border-box;
+}
+
+/*responsive image gallery*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 5px;
+      text-align: center;
+    }
+     div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 362px;
+    }
 
