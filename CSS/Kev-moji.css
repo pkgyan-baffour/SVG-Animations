@@ -249,10 +249,6 @@
       stroke-miterlimit: 10;
     }
 
-    body {
-      background-color: #f1f1f1;
-    }
-
     /*blinker--Specifying the name of the 
     keyframe you want to bind to the selector*/
 
@@ -436,20 +432,8 @@
         }
       }
 
-      #city {
-        margin: 0 auto;
-        display: block;
-        position: absolute;
-        text-align: center;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-top: 4px solid;
-        margin-top: 10px;
-        height: 300px
-      }
-
-      /*animating the bike and plane*/
+      /*animating the bike
+      https://www.w3schools.com/css/css3_animations.asp*/
 
       g#bike12 {
         animation-name: move;
@@ -457,20 +441,22 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
-
+      /*animating the bike*/
       g#bike10 {
         animation-name: move;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
+      /*animating the bike*/
 
       g#bike20 {
         animation-name: move;
         animation-duration: 8s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out-in;
+        animation-timing-function: ease-out;
       }
+      /*animating the cloud*/
 
       g#cloud1 {
         animation-name: move;
@@ -478,19 +464,19 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease;
       }
-
+      /*animating the cloud*/
       g#cloud2 {
         animation-name: move;
         animation-duration: 100s;
         animation-iteration-count: infinite;
         animation-timing-function: ease;
       }
-
+      /*animating the plane*/
       g#plane {
         animation-name: move;
         animation-duration: 120s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out-in;
+        animation-timing-function: ease-out;
       }
 
       /*blue sky changing opacity*/
@@ -501,7 +487,7 @@
 
       @keyframes hideshow {
         0% {
-          opacity: 0.3;
+          opacity: 0.10;
         }
         10% {
           opacity: 0.3;
@@ -522,12 +508,6 @@
           transform: translateX(3000px);
         }
       }
-
-      /*hr {
-        color: black;
-        background-color: black;
-      }*/
-
       h3 {
 
         text-align: center;
@@ -585,13 +565,6 @@
         clear: both;
       }
 
-      /* Content */
-
-      .content {
-        background-color: white;
-        padding: 5px;
-      }
-
       /* Responsive layout - makes a two column-layout instead of four columns */
 
       @media (max-width: 900px) {
@@ -623,7 +596,6 @@ img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -637,7 +609,6 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
 .w3-btn {margin-bottom:10px;}
 
 }
@@ -778,4 +749,5 @@ div.desc {
       float: left;
       width: 362px;
     }
+
 

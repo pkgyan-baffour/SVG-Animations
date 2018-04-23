@@ -4,6 +4,9 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta charset="UTF-8">
   <title>Kev-moji</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -13,8 +16,13 @@
 </head>
 
 <body>
+  <br><br>
+
+  <a href="index.html" data-toggle="svg" title="Return to Safety"><img width="50px" src="SVG/arrow.svg"></img></a>
+
+  <a href="D3js2.html" data-toggle="svg" title="D3-SVG Penalty kick"><img width="50px" src="SVG/arrow2.svg"></img></a>
   <Br><br>
-  <button onclick="goBack()">Back to safety</button>
+  <!--<button onclick="goBack()">Back to safety</button>
   <button onclick="myFunction()">D3-SVG Goal kick - View</button>
 
   <script>
@@ -27,15 +35,21 @@
     function myFunction() {
       location.assign("D3js.html");
     }
-  </script>
-  <h1>BobbleHead</h1>
-  <br><br><br>
+
+  </script>-->
+  <p>Blink and Rock SVG<br> Animation using <strong>CSS @keyframes</strong> </p>
+
   <div class="kevins_face">
 
     <!--face--
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
+    <!--Adding tooltip JQuery-->
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="svg"]').tooltip();
+      });
+    </script>
     <div class="svg-wrapper">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
 <style type="text/css">
@@ -2986,15 +3000,16 @@ cuXKlSt8/6rdIvOoYqyp358riS1Xrly57r6fPUqxPep7cyWx5cqVK9ds7nNJYLly5cqVK1euXLly
 </g>
 </svg>
 
-      <svg width="140%" height="140%" viewBox="0 50 900 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
- <path id="path">
-    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
-  </path>
-  <text font-size="83" font-family: 'Lobster', cursive;
- fill='lightgrey(36, 95%, 85%, 1)'>
-    <textPath xlink:href="#path">SVG Kev-Moji...
-    </textPath>
-  </text>
+      <svg width="140%" height="140%" viewBox="0 50 900 500" xmlns="http://www.w3.org/2000/  
+    svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+     <path id="path">
+      <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
+      </path>
+      <text font-size="83" font-family: 'Lobster', cursive;
+      fill='lightgrey(36, 95%, 85%, 1)'>
+      <textPath xlink:href="#path">SVG Kev-Moji...
+      </textPath>
+    </text>
 </svg>
     </div>
     <div style="text-align:center;">
@@ -3178,7 +3193,51 @@ cuXKlSt8/6rdIvOoYqyp358riS1Xrly57r6fPUqxPep7cyWx5cqVK9ds7nNJYLly5cqVK1euXLly
             transform: rotate(10deg);
           }
         }
+
+        /*shaking arrows on hover*/
+
+        img:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+          0% {
+            transform: translate(1px, 1px) rotate(0deg);
+          }
+          10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+          }
+          20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+          }
+          30% {
+            transform: translate(3px, 2px) rotate(0deg);
+          }
+          40% {
+            transform: translate(1px, -1px) rotate(1deg);
+          }
+          50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+          }
+          60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+          }
+          70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+          }
+          80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+          }
+          90% {
+            transform: translate(1px, 2px) rotate(0deg);
+          }
+          100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+          }
+        }
       </style>
+
 </body>
 
 </html>
